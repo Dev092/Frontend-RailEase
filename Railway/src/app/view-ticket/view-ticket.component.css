@@ -1,0 +1,21 @@
+.heading{
+    text-align: center;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 20%; /* Set a fixed width for each cell */
+}
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom right,rgb(134, 219, 244),rgb(246, 205, 152));
+
+}

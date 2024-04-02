@@ -1,0 +1,22 @@
+
+<p>train works!</p>
+<h2>Train List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Train Number</th>
+            <th>Train Name</th>
+            <th>Journey Date</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let train of trains">
+            <td>{{train.trainNumber}}</td>
+            <td>{{train.trainName}}</td>
+            <td>{{train.dateOfJourney}}</td>
+            <td><button class="box" (click)="onClick(train.seatNumber)">Show</button></td>
+        </tr>
+    </tbody>
+</table>
+

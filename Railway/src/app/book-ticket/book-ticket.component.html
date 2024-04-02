@@ -1,0 +1,89 @@
+<form (ngSubmit)="onSubmit()" #trainForm="ngForm">
+    <div>
+        <label>Train Number</label>
+        <input type="number" id="trainNumber" [(ngModel)]="train.trainNumber" name="trainNumber" required>
+    </div>
+
+    <div>
+        <label>Train Name</label>
+        <input type="text" id="trainName" [(ngModel)]="train.trainName" name="trainName" required>
+    </div>
+    
+    <div>
+        <label>Journey Date</label>
+        <input type="date" id="dateOfJourney" [(ngModel)]="train.dateOfJourney" name="dateOfJourney" required>
+    </div>
+    
+    <div>
+        <label>Passenger Name</label>
+        <input type="text" id="pName" [(ngModel)]="train.pName" name="pName" required>
+    </div>
+    
+    <div>
+        <label>Passenger Age</label>
+        <input type="number" id="age" [(ngModel)]="train.age" name="age" required>
+    </div>
+
+    <label for="source">Source</label>
+    <select id="source" [(ngModel)]="train.source" name="source" required>
+        <option value="" disabled selected>Select source</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Samastipur">Samastipur</option>
+        <option value="Darbhanga">Darbhanga</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Ambala">Ambala</option>
+        <option value="Gopalganj">Gopalganj</option>
+        <option value="Bettiah">Bettiah</option>
+           
+    </select>
+
+    <div>
+        <label for="destination">Destination</label>
+        <select id="destination" [(ngModel)]="train.destination" name="destination" required>
+            <option value="" disabled selected>Select destination</option>
+            <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Samastipur">Samastipur</option>
+        <option value="Darbhanga">Darbhanga</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Ambala">Ambala</option>
+        <option value="Gopalganj">Gopalganj</option>
+        <option value="Bettiah">Bettiah</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="coach">Coach</label>
+        <select id="coach" [(ngModel)]="train.coach" name="coach" required>
+            <option value="" disabled selected>Select coach</option>
+            <option value="AC1">AC1</option>
+            <option value="AC2">AC2</option>
+            <option value="AC3">AC3</option>
+            <option value="EC3">EC3</option>
+            <option value="SL">SL</option>
+            <option value="GN">GN</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+    
+
+    <div>
+        <label for="birthPreference">Birth Preference</label>
+        <select id="birthPreference" [(ngModel)]="train.birthPreference" name="birthPreference" required>
+            <option value="" disabled selected>Select Birth</option>
+            <option value="SU">Side Upper</option>
+            <option value="SL">Side Lower</option>
+            <option value="L">Lower</option>
+            <option value="M">Middle</option>
+            <option value="UP">Upper</option>
+
+        </select>
+        </div>
+
+    <button type="submit" [disabled]="!trainForm.form.valid">Submit</button>
+</form>
