@@ -1,0 +1,91 @@
+<body >
+  <h1 style="text-align: center; position: relative; margin-top: 120px;">
+    <img src="../assets/launcher.gif" alt="Dialog Image" style="position: fixed; top: 40px; left: 10px; width: auto; height: 100px;">
+</h1>
+<div style="padding-top: 30px;">
+<div class="train-info-container">
+  <div class="image-container">
+      <img style="border-radius: 20px;" src="../assets/back.jpg" alt="Train Image">
+  </div>
+  <div class="details-container">
+      <div class="detail-row">
+          <strong>Train Number:</strong>
+          <p>{{train.trainNumber}}</p>
+      </div>
+      <div class="detail-row">
+          <strong>Train Name:</strong>
+          <p>{{train.trainName}}</p>
+      </div>
+      <div class="detail-row">
+          <strong>Arrival Time:</strong>
+          <p>01:45 PM</p>
+      </div>
+      <div class="detail-row">
+          <strong>Departure Time:</strong>
+          <p>02:00 PM</p>
+      </div>
+  </div>
+</div>
+</div>
+
+
+    <div class="centered-container">
+      <div class="card"> 
+        <form (ngSubmit)="onSubmit()" #infoForm="ngForm">
+  
+          <div>
+            <label>Train Number:</label>
+            <input type="number" id="trainNumber" [(ngModel)]="train.trainNumber" name="trainNumber" disabled>
+          </div>
+  
+          <div>
+            <label>Train Name:</label>
+            <input type="text" id="trainName" [(ngModel)]="train.trainName" name="trainName" disabled>
+          </div>
+  
+          <div>
+            <label>Passenger Name:</label>
+            <input type="text" id="pName" [(ngModel)]="train.pName" name="pName" required>
+          </div>
+          
+          <div>
+            <label>Passenger Age:</label>
+            <input type="number" id="age" [(ngModel)]="train.age" name="age" required>
+          </div>
+  
+          <div>
+            <label for="coach">Coach:</label>
+            <select id="coach" [(ngModel)]="train.coach" name="coach" required>
+              <option value="" disabled selected>Select coach</option>
+              <option value="AC1">AC1</option>
+              <option value="AC2">AC2</option>
+              <option value="AC3">AC3</option>
+              <option value="EC3">EC3</option>
+              <option value="SL">SL</option>
+              <option value="GN">GN</option>
+            </select>
+          </div>
+  
+          <div>
+            <label for="birthPreference">Birth Preference:</label>
+            <select id="birthPreference" [(ngModel)]="train.birthPreference" name="birthPreference" required>
+              <option value="" disabled selected>Select Birth</option>
+              <option value="SU">Side Upper</option>
+              <option value="SL">Side Lower</option>
+              <option value="L">Lower</option>
+              <option value="M">Middle</option>
+              <option value="UP">Upper</option>
+            </select>
+          </div>
+          
+          <button type="submit" [disabled]="!infoForm.form.valid">Make Payment</button>
+          <img src="../assets/hf.jpeg" style="width: 100%; height: auto; ">
+
+        </form>
+      </div>
+    </div>
+    <h1 style="text-align: center; position: relative; margin-top: 120px;">
+      <img src="../assets/diloge.gif" alt="Dialog Image" style="position: fixed; top: 40px; right: 10px; width: auto; height: 100px;">
+  </h1>
+  </body>
+  

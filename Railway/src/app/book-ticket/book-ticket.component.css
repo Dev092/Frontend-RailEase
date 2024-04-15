@@ -1,0 +1,111 @@
+.centered-container {
+  padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Full height of the viewport */
+  }
+  
+  .card {
+    width: 400px; /* Adjust as needed */
+    background-color: #a2bdf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  form div {
+    display: grid;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-card{
+  padding-bottom: 80px;
+  background-color: black;
+  color: rgb(26, 255, 0);
+  border-radius: 5px;
+}
+.card-header{
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+.card-body{
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.put{
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+.button-box {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #007bff; /* Button border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align text */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition effect */
+}
+
+.button-box:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+  border-color: #0056b3; /* Darker border color on hover */
+}

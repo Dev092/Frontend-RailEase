@@ -1,31 +1,88 @@
-<table>
+<h1 style="text-align: center; color: green; padding-top: 50px;">Review and Make Payment</h1>
+
+<table class="table">
     <thead>
-        <tr>
-            <th>Seat Number</th>
-            <th>Train Number</th>
-            <th>Train Name</th>
-            <th>Journey Date</th>
-            <th>Passenger Name</th>
-            <th>Passenger Age</th>
-            <th>Source</th>
-            <th>Destination</th>
-            <th>Coach</th>
-            <th>Birth Preference</th>
-        </tr>
+      <tr>
+        
+        <th>Train Number</th>
+        <th>Train Name</th>
+        <th>Journey Date</th>
+        <th>Passenger Name</th>
+        <th>Passenger Age</th>
+        <th>Source</th>
+        <th>Destination</th>
+        <th>Coach</th>
+        <th>Birth Preference</th>
+      </tr>
     </thead>
     <tbody>
-            <td>{{train.seatNumber}}</td>
-            <td>{{train.trainNumber}}</td>
-            <td>{{train.trainName}}</td>
-            <td>{{train.dateOfJourney}}</td>
-            <td>{{train.pName}}</td>
-            <td>{{train.age}}</td>
-            <td>{{train.source}}</td>
-            <td>{{train.destination}}</td>
-            <td>{{train.coach}}</td>
-            <td>{{train.birthPreference}}</td>
+      <tr>
+        
+        <td>{{train.trainNumber}}</td>
+        <td>{{train.trainName}}</td>
+        <td>{{train.dateOfJourney}}</td>
+        <td>{{train.pName}}</td>
+        <td>{{train.age}}</td>
+        <td>{{train.source}}</td>
+        <td>{{train.destination}}</td>
+        <td>{{train.coach}}</td>
+        <td>{{train.birthPreference}}</td>
+      </tr>
     </tbody>
-</table>
+  </table>
+  <button (click)="goBack()">Edit</button>
+
+  
+
+
+<div class="centered-card">
+    <div class="card">
+      <div class="card-body">
+        <form (ngSubmit)="onPayment()" #payForm="ngForm">
+          <div class="form-group">
+            <label for="upiId">UPI Id</label>
+            <input type="text" id="upiId" [(ngModel)]="payment.upiId" name="upiId" required>
+          </div>
+
+
+          <!-- <input type="number" id="payAmount" [ngModel]="amount" disabled> -->
+
+          <div class="form-group">
+            <label for="payAmount" style="color: green;">Pay Amount: {{ amount }}</label>
+            <input type="number" id="payAmount" [(ngModel)]="payment.payAmount" name="payAmount" disabled>
+        </div>
+        
+  
+          <!-- <div class="form-group">
+            <label for="payStatus">Payment Status</label>
+            <input type="text" id="payStatus" [(ngModel)]="payment.payStatus" name="payStatus" required>
+          </div> -->
+
+
+
+          <div class="form-group">
+            <label for="payStatus">Privacy Policy</label>
+            <div>
+              <p>
+                <input type="radio" id="success" name="payStatus" [(ngModel)]="payment.payStatus" value="Success" required>
+                I agree</p>  </div>
+            <p style="color: red;">Our privacy policy ensures the secure handling and
+              protection of your personal data in accordance with
+               relevant regulations.</p>
+            
+            
+        </div>
+        
+          
+          
+          
+          <button type="submit" [disabled]="!payForm.form.valid">$ Make payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- 
 <div>
-<button (click)="onPayment()">Make payment</button>
-</div>
+<button (click)="onPayment()" [disabled]="!payForm.form.valid">Make payment</button>
+</div> -->

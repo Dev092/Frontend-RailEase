@@ -1,0 +1,47 @@
+/* transaction-history.component.css */
+
+/* Style for the container to center-align content */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+  }
+  
+  /* Style for the card */
+  .card {
+    width: 100%; /* Make card width 100% of available space */
+    max-width: 800px; /* Set maximum width for the card */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 34, 255, 0.5); /* Increase box shadow on hover */
+  }
+  
+  .card-body {
+    padding: 50px; /* Add padding inside the card body */
+  }
+  
+  .card-text {
+    font-size: 16px; /* Set font size for text */
+    margin-bottom: 10px; /* Add spacing between text elements */
+  }
+  
+  /* Style to make the card span full width */
+  @media (min-width: 768px) {
+    .card-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .card {
+      flex: 1; /* Allow the card to expand to fill available space */
+      margin: 0 10px; /* Add spacing between multiple cards */
+    }
+  }
+  

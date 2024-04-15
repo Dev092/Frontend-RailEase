@@ -14,8 +14,8 @@
 }
 .container {
     border: 2px solid black;
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
-    background-image: linear-gradient(to bottom right,rgb(134, 219, 244),rgb(246, 205, 152));
+    background-image: linear-gradient(to bottom right,rgb(255, 229, 174),rgb(178, 243, 190));
 
 }

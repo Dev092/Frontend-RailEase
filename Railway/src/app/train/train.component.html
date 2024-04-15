@@ -1,22 +1,30 @@
 
-<p>train works!</p>
-<h2>Train List</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Train Number</th>
-            <th>Train Name</th>
-            <th>Journey Date</th>
-           
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let train of trains">
-            <td>{{train.trainNumber}}</td>
-            <td>{{train.trainName}}</td>
-            <td>{{train.dateOfJourney}}</td>
-            <td><button class="box" (click)="onClick(train.seatNumber)">Show</button></td>
-        </tr>
-    </tbody>
-</table>
+<body style="background-image: linear-gradient(to bottom right,rgb(255, 247, 6),rgb(255, 0, 238));">
+<div class="container">
+  <h1 style="text-align: center; text-shadow: 2px 2px 2px blueviolet;">My Booking</h1>
+  <div class="train-container" *ngIf="trains.length > 0; else noTrains">
+    <div class="train" *ngFor="let train of trains">
+      <div class="card">
+        <div class="card-body">
+          <img src="../assets/tlogo.jpg" class="train-img" alt="Train Photo">
+          <h5 class="train-title">{{ train.trainName }}</h5>
+          <p class="train-text">Train Number: {{ train.trainNumber }}</p>
+          <p class="train-text">Journey Date: {{ train.dateOfJourney }}</p>
+          <button (click)="onClick(train.seatNumber)">View Ticket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noTrains>
+    <p>No trains available...</p>
+  </ng-template>
+</div>
+
+</body>
+
+
+  
+  
+  
+
 

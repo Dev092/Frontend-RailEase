@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div *ngFor="let transaction of payment" class="card mb-3">
+          <div class="card-body">
+            <img src="../assets/rupee.png" style="width: auto; height: 100px; border-radius: 50%;">
+            <p class="card-text"><strong> UPI ID:</strong> {{ transaction.upiId }}</p>
+            <p class="card-text"><strong>Payment Status:</strong> {{ transaction.payStatus }}</p>
+            <p class="card-text"><strong>Total Amount:</strong> {{ transaction.payAmount }}</p>
+            <p class="card-text"><strong>Transaction ID: </strong>{{ transaction.paymentId }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

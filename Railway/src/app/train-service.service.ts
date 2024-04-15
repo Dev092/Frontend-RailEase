@@ -2,12 +2,26 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Train } from './train';
+import { Payment } from './payment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class TrainServiceService {
+  private payURL="http://localhost:8080/api/v1/payments";
+  getTransactionHistory():Observable<Payment[]>{
+    return this.httpClient.get<Payment[]>(`${this.payURL}`);
+  }
+  makePayment(payment: Payment): Observable<Object>{
+    return this.httpClient.post(`${this.payURL}`,payment);
+  }
+  getTransaction(id:number):Observable<Payment>{
+    return this.httpClient.get<Payment>(`http://localhost:8080/api/v1/payments/payment/${id}`);
+  }
+  
+
+
   private train= new Train();
   private seatNumber : any;
 

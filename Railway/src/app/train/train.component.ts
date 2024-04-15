@@ -23,5 +23,5 @@ export class TrainComponent implements OnInit{
     this.router.navigate(['/view-ticket']);
   }
 
-
+  
 }

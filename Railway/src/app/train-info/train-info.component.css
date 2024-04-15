@@ -1,0 +1,110 @@
+.centered-container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Full height of the viewport */
+  }
+  
+  .card {
+    width: 400px; /* Adjust as needed */
+    background-color: #a2bdf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  form div {
+    display: grid;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .train-info-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    background-color: hsl(248, 100%, 63%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.image-container {
+    flex: 0 0 auto; /* Fixed width for the image container */
+    margin-right: 20px; /* Margin between image and details */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.details-container {
+    flex: 1; /* Allow details container to grow and take remaining space */
+}
+
+.detail-row {
+    margin-bottom: 10px; /* Spacing between detail rows */
+}
+
+.detail-row strong {
+    display: inline-block;
+    width: 120px; /* Fixed width for the strong element (label) */
+}
+
+.detail-row p {
+    margin: 0;
+}

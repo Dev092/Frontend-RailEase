@@ -1,8 +1,8 @@
-<body >
+<div style="padding-top: 30px; padding-bottom: 50px;">
 <div  class="container">
 <u><h2 class="heading">Electronic Reservation Slip(ERS)</h2></u>
 <div style="text-align: center; padding-bottom: 10px;">
-    <img src="../assets/irctclogo.png" style="width: auto; height: 100px;">
+    <img src="../assets/irctclogo.png" style="width: auto; height: 100px; border-radius: 50%;">
 </div>
 
 <table>
@@ -12,9 +12,9 @@
         <th><h3>To</h3></th>
     </thead>
     <tbody>
-        <td><h4 style="color: blue;">{{train.source}}</h4></td>
+        <td><h3 style="color: blue;">{{train.source}}</h3></td>
         <td></td>
-        <td><h4 style="color: blue;">{{train.destination}}</h4></td>
+        <td><h3 style="color: blue;">{{train.destination}}</h3></td>
     </tbody>
 </table>
 <h4>PNR Number: {{train.seatNumber}}546{{train.seatNumber}}</h4>
@@ -39,6 +39,23 @@
 <h4>Train Name: </h4><p style="color: green;">{{train.trainName}}</p>
 <h4>Date of Journey:</h4><p style="color: green;"> {{train.dateOfJourney}}</p>
 <div>
+
+    <h3>Payment details:</h3>
+    <table class="custom-table">
+        <thead>
+            <th><h3>Payment Status</h3></th>
+            <th><h3>Ticket Cost</h3></th>
+            
+        </thead>
+        <tbody>
+            <td>{{payment.payStatus}}</td>
+            <td>{{payment.payAmount}}</td>
+            
+        </tbody>
+    </table>
+
+
+
 <h2>Customer Care:</h2>
 <li>
     For e-ticket booking , cancellation and refund assistance ,
@@ -47,6 +64,9 @@
     at 139.</li>
     <li>For e-catering , to book and get food delivered on your train berth , please contact us at 1323 (24*7 Hrs Toll Free) or log on 
     to www.ecatering.irctc.co.in.</li>
+</div><br>
+<img src="../assets/hf.jpeg" style="width: 100%; height: auto;">
+
 </div>
 </div>
 <!-- <table>
@@ -77,4 +97,3 @@
             <td>{{train.birthPreference}}</td>
     </tbody>
 </table> -->
-</body>

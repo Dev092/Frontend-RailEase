@@ -9,6 +9,9 @@ import { BookTicketComponent } from './book-ticket/book-ticket.component';
 import { FormsModule } from '@angular/forms';
 import { ViewTicketComponent } from './view-ticket/view-ticket.component';
 import { PaymentComponent } from './payment/payment.component';
+import { TrainInfoComponent } from './train-info/train-info.component';
+import { TransactionHistoryComponent } from './transaction-history/transaction-history.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { PaymentComponent } from './payment/payment.component';
     TrainComponent,
     BookTicketComponent,
     ViewTicketComponent,
-    PaymentComponent
+    PaymentComponent,
+    TrainInfoComponent,
+    TransactionHistoryComponent
+   
   ],
   imports: [
     BrowserModule,

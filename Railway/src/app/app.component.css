@@ -1,46 +1,71 @@
-.container {
-    display: flex;
-    height: 100vh; /* Sets the container height to 100% of viewport height */
-  }
+.navbar {
+  background-color: #ffe596; /* Background color */
+  overflow: hidden; /* Hide overflow content */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Place at the top */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
 
-  body {
-    background-color: rgb(255, 214, 214);
-    margin: 0;
-    padding: 0;
-  }
-  
-  .card {
-    background-image: linear-gradient(to bottom right,rgb(255, 189, 189),rgb(171, 152, 246));
-    border-radius: 5px;
-    padding: 20px;
-    position: fixed; /* Fixes the position of the card */
-    top: 0; /* Aligns the card to the top */
-    right: 0; /* Aligns the card to the right */
-    height: 100vh; /* Sets the card height to 100% of viewport height */
-    width: 120px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  nav ul li a:hover {
-    color: #f6ff00;
-    
-  }
-  
-  .active {
-    font-weight: bold;
-  
-  }
-  
+.navbar ul {
+  list-style-type: none; /* Remove default list style */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline; /* Display list items inline */
+}
+
+.navbar li a {
+  display: inline-block; /* Make the links behave like block elements */
+  color: #333; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar li a:hover {
+  background-color: #cdffa2; /* Background color on hover */
+}
+
+.navbar li a.active {
+  background-color: #4CAF50; /* Active link background color */
+  color: white; /* Active link text color */
+}
+
+.container {
+  margin-top: 50px; /* Add margin to the container to avoid content being hidden under navbar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
