@@ -1,21 +1,37 @@
 .heading{
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px blue;
 }
 .custom-table {
     border-collapse: collapse;
     width: 100%;
 }
 
+.custom-table th{
+    color:black;
+    text-shadow: 0.3px 0.3px 0.3px red;
+}
 .custom-table th, .custom-table td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
     width: 20%; /* Set a fixed width for each cell */
+
 }
 .container {
+    border-radius: 5px;
     border: 2px solid black;
     padding: 40px;
     margin: 20px;
-    background-image: linear-gradient(to bottom right,rgb(255, 229, 174),rgb(178, 243, 190));
+    background-image: linear-gradient(to bottom right,rgb(252, 172, 172),rgb(178, 181, 251));
 
+}
+
+
+.qr-code {
+   
+    float: right;
+    width: 250px; /* Adjust the width of the QR code image */
+    height: auto;
 }

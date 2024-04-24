@@ -1,4 +1,4 @@
-<body >
+<div class="background-div">
   <h1 style="text-align: center; position: relative; margin-top: 120px;">
     <img src="../assets/launcher.gif" alt="Dialog Image" style="position: fixed; top: 40px; left: 10px; width: auto; height: 100px;">
 </h1>
@@ -8,21 +8,27 @@
       <img style="border-radius: 20px;" src="../assets/back.jpg" alt="Train Image">
   </div>
   <div class="details-container">
+    <div class="detail-row">
+      <h2>{{train.source}}
+      <img src="../assets/arrow.png" alt="Iarrow" style="width: 200px; height: 30px;">
+
+      {{train.destination}}</h2>
+    </div>
       <div class="detail-row">
-          <strong>Train Number:</strong>
-          <p>{{train.trainNumber}}</p>
+        <p> <strong>Train Number:</strong>
+          {{train.trainNumber}}</p>
       </div>
       <div class="detail-row">
-          <strong>Train Name:</strong>
-          <p>{{train.trainName}}</p>
+        <p><strong>Train Name:</strong>
+         {{train.trainName}}</p>
       </div>
       <div class="detail-row">
-          <strong>Arrival Time:</strong>
-          <p>01:45 PM</p>
+        <p><strong>Arrival Time:</strong>
+          01:45 PM</p>
       </div>
       <div class="detail-row">
-          <strong>Departure Time:</strong>
-          <p>02:00 PM</p>
+        <p><strong>Departure Time:</strong>
+          02:00 PM</p>
       </div>
   </div>
 </div>
@@ -33,7 +39,7 @@
       <div class="card"> 
         <form (ngSubmit)="onSubmit()" #infoForm="ngForm">
   
-          <div>
+          <!-- <div>
             <label>Train Number:</label>
             <input type="number" id="trainNumber" [(ngModel)]="train.trainNumber" name="trainNumber" disabled>
           </div>
@@ -41,7 +47,7 @@
           <div>
             <label>Train Name:</label>
             <input type="text" id="trainName" [(ngModel)]="train.trainName" name="trainName" disabled>
-          </div>
+          </div> -->
   
           <div>
             <label>Passenger Name:</label>
@@ -87,5 +93,5 @@
     <h1 style="text-align: center; position: relative; margin-top: 120px;">
       <img src="../assets/diloge.gif" alt="Dialog Image" style="position: fixed; top: 40px; right: 10px; width: auto; height: 100px;">
   </h1>
-  </body>
+</div>
   

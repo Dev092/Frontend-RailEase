@@ -4,15 +4,13 @@
 .container-fluid {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+   padding: 80px;
     
   }
   
   /* Style for the card */
   .card {
     width: 100%; /* Make card width 100% of available space */
-    max-width: 800px; /* Set maximum width for the card */
     border: 1px solid #ccc; /* Add a border */
     border-radius: 8px; /* Add border radius for rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
@@ -24,7 +22,7 @@
   }
   
   .card-body {
-    padding: 50px; /* Add padding inside the card body */
+    padding: 40px; /* Add padding inside the card body */
   }
   
   .card-text {

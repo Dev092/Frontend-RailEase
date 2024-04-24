@@ -1,9 +1,12 @@
-<div style="padding-top: 30px; padding-bottom: 50px;">
+<div style="padding-top: 20px; padding-bottom: 50px; padding-left: 50px; padding-right: 50px;">
 <div  class="container">
-<u><h2 class="heading">Electronic Reservation Slip(ERS)</h2></u>
+<h2 class="heading">Electronic Reservation Slip(ERS)</h2>
 <div style="text-align: center; padding-bottom: 10px;">
     <img src="../assets/irctclogo.png" style="width: auto; height: 100px; border-radius: 50%;">
 </div>
+
+<img src="../assets/qr.png" alt="QR Code" class="qr-code">
+
 
 <table>
     <thead>
@@ -12,14 +15,14 @@
         <th><h3>To</h3></th>
     </thead>
     <tbody>
-        <td><h3 style="color: blue;">{{train.source}}</h3></td>
+        <td><h3 style="color: blue;">{{train.source}}</h3><p >10:55 AM</p></td>
         <td></td>
-        <td><h3 style="color: blue;">{{train.destination}}</h3></td>
+        <td><h3 style="color: blue;">{{train.destination}}</h3><p>13:30 PM</p></td>
     </tbody>
 </table>
 <h4>PNR Number: {{train.seatNumber}}546{{train.seatNumber}}</h4>
 
-<u><h2 class="heading">Passenger Details</h2></u>
+<h2 style="color: green;">Passenger Details:</h2>
 <table class="custom-table">
     <thead>
         <th><h3>Name</h3></th>
@@ -37,7 +40,7 @@
     </tbody>
 </table>
 <h4>Train Name: </h4><p style="color: green;">{{train.trainName}}</p>
-<h4>Date of Journey:</h4><p style="color: green;"> {{train.dateOfJourney}}</p>
+<h4>Date of Journey:</h4><p style="color: green;"> {{format(train.dateOfJourney)}}</p>
 <div>
 
     <h3>Payment details:</h3>

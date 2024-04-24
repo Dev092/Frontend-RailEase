@@ -97,7 +97,7 @@
 }
 
 .detail-row {
-    margin-bottom: 10px; /* Spacing between detail rows */
+    margin-bottom: 8px; /* Spacing between detail rows */
 }
 
 .detail-row strong {
@@ -107,4 +107,9 @@
 
 .detail-row p {
     margin: 0;
+}
+
+.background-div {
+  background-image: linear-gradient(to bottom right,rgb(230, 240, 249),rgb(240, 230, 247));
+  padding: 20px; /* Optional: Adding padding for content inside the div */
 }

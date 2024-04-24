@@ -1,0 +1,79 @@
+.background-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.frmbox{
+    padding-bottom: 60px;
+}
+.heading{
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(227, 251, 255);
+    text-shadow: 5px 2px 2px rgb(0, 8, 255);
+}
+.bdr {
+    background-color: red;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    padding: 20px; /* Add padding around the container */
+    border: 1px solid #ccc; /* Add border for visualization */
+}
+
+.bdr img {
+    max-width: 7%; /* Set maximum width for each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Apply border-radius for circular shape */
+}
+.frm{
+    color: white;
+    border: 2px solid blue;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #1f2a2e;
+}
+.bdy {
+    flex: 1;
+    padding-right: 50px; /* Add some space between the text and the form */
+    padding-left: 40px;
+}
+.scrolling-image {
+    padding-top: 80px;
+    padding-right: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust the maximum width of the image as needed */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+form {
+    margin-top: 20px; /* Add space between text and form */
+}
+.form-group {
+    margin-bottom: 15px; /* Add space between form elements */
+}
+.form-group label {
+    display: block; /* Ensure labels are displayed as block elements */
+    margin-bottom: 5px; /* Add space below each label */
+}
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #45a049;
+}

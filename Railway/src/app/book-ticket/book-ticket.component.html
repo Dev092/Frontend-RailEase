@@ -1,4 +1,7 @@
 <!-- <body style="background-image: linear-gradient(to bottom right,rgb(100, 111, 255),rgb(255, 255, 255));"> -->
+ 
+    <div class="background-div">
+      <h1 class="heading">Welcome to Ease Travel Booking</h1>
     <div class="centered-container">
     <div class="card"> 
  <form (ngSubmit)="onSubmit()" #trainForm="ngForm">
@@ -54,30 +57,15 @@
     <img src="../assets/launcher.gif" alt="Dialog Image" style="position: fixed; top: 40px; left: 10px; width: auto; height: 100px;">
 </h1>
 
+<div class="image-container">
+    <!-- Image to be animated -->
+    <img src="../assets/trrun.png" alt="Moving Image" class="moving-image">
+    <!-- Text to move along with the image -->
+    <p class="moving-text"><b>Welcome to Indian Railways!</b></p>
+</div>
+<!-- <p><img src="../assets/trrun.png" alt="Moving Image" class="moving-image"></p> -->
 
-<div class="contact-card">
-    <div class="card-header">
-      <h3>Contact Us</h3>
-    </div>
-    <div class="card-body">
-        <div class="put">
-            <label>Your Email Id</label>
-            <input type="email">
-        </div>
-        <div class="put">
-            <label>Your Query</label>
-            <input type="text">
-        </div>
-        <div class="button-box" (click)="sended()">
-            Send
-          </div>
-          
-      <p><strong>Email:</strong> devk*kpit.com</p>
-      <p><strong>Phone:</strong> +918092257498</p>
-      <p><strong>Address:</strong> Room 4, Phase-1, Pune, Maharastra</p>
-    </div>
-  </div>
-
+</div>
 <!-- </body> -->
 
 

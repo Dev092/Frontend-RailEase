@@ -6,6 +6,7 @@ import { ViewTicketComponent } from './view-ticket/view-ticket.component';
 import { PaymentComponent } from './payment/payment.component';
 import { TrainInfoComponent } from './train-info/train-info.component';
 import { TransactionHistoryComponent } from './transaction-history/transaction-history.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   {path: 'trains', component: TrainComponent},
@@ -14,7 +15,9 @@ const routes: Routes = [
   {path: '', redirectTo: 'book-ticket', pathMatch: 'full'},
   {path: 'payment', component: PaymentComponent },
   {path: 'trainInfo', component: TrainInfoComponent},
-  {path: 'transactionHistory', component: TransactionHistoryComponent}
+  {path: 'transactionHistory', component: TransactionHistoryComponent},
+  {path: 'aboutus', component: AboutUsComponent}
+
 
 ];
 

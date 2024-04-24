@@ -11,6 +11,7 @@ import { ViewTicketComponent } from './view-ticket/view-ticket.component';
 import { PaymentComponent } from './payment/payment.component';
 import { TrainInfoComponent } from './train-info/train-info.component';
 import { TransactionHistoryComponent } from './transaction-history/transaction-history.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TransactionHistoryComponent } from './transaction-history/transaction-h
     ViewTicketComponent,
     PaymentComponent,
     TrainInfoComponent,
-    TransactionHistoryComponent
+    TransactionHistoryComponent,
+    AboutUsComponent
    
   ],
   imports: [

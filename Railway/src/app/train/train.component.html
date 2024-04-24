@@ -1,5 +1,5 @@
 
-<body style="background-image: linear-gradient(to bottom right,rgb(255, 247, 6),rgb(255, 0, 238));">
+<body style="background-image: linear-gradient(to bottom right,rgb(229, 231, 249),rgb(245, 212, 212));">
 <div class="container">
   <h1 style="text-align: center; text-shadow: 2px 2px 2px blueviolet;">My Booking</h1>
   <div class="train-container" *ngIf="trains.length > 0; else noTrains">
@@ -9,7 +9,7 @@
           <img src="../assets/tlogo.jpg" class="train-img" alt="Train Photo">
           <h5 class="train-title">{{ train.trainName }}</h5>
           <p class="train-text">Train Number: {{ train.trainNumber }}</p>
-          <p class="train-text">Journey Date: {{ train.dateOfJourney }}</p>
+          <p class="train-text">Journey Date: {{ format(train.dateOfJourney) }}</p>
           <button (click)="onClick(train.seatNumber)">View Ticket</button>
         </div>
       </div>

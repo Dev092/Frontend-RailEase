@@ -3,18 +3,20 @@ import { Train } from '../train';
 import { TrainServiceService } from '../train-service.service';
 import { Router } from '@angular/router';
 import { Payment } from '../payment';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-view-ticket',
   templateUrl: './view-ticket.component.html',
-  styleUrl: './view-ticket.component.css'
+  styleUrl: './view-ticket.component.css',
+  providers: [DatePipe]
 })
 export class ViewTicketComponent implements OnInit{
   train:Train=new Train();
   payment:Payment=new Payment();
   payId:number = this.trainService.getSeatNumber();
 
-  constructor(private trainService:TrainServiceService, private router: Router){}
+  constructor(private trainService:TrainServiceService, private router: Router, private datePipe: DatePipe){}
   ngOnInit(): void {
     this.trainService.getTransaction(this.payId).subscribe(
       data => {
@@ -36,6 +38,9 @@ export class ViewTicketComponent implements OnInit{
         console.error(error); // Handle error if any
       }
     );
+  }
+  format(date?:Date) : string {
+    return this.datePipe.transform(date, 'yyyy-MM-dd') || '';
   }
   // private getTrain(){
   //   this.trainService.getTrainBooking(1).subscribe(data => {

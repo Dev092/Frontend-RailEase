@@ -36,6 +36,7 @@ button:hover {
 }
 
 .card-body {
+  background-image: linear-gradient(to bottom right,rgb(188, 195, 251),rgb(252, 189, 189));
   padding: 20px;
   text-align: center;
 }
